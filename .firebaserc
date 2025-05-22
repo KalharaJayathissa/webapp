@@ -1,5 +1,25 @@
 {
   "projects": {
-    "default": "kalharaj"
-  }
+    "default": "kalharaj",
+    "project1": "kalharaj",
+    "project2": "kalharajayathissa"
+  },
+  "targets": {
+    "kalharaj": {
+      "hosting": {
+        "site1": [
+          "kalharaj"
+        ]
+      }
+    },
+    "kalharajayathissa": {
+      "hosting": {
+        "site1": [
+          "kalharaj",
+          "kalharajayathissa"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

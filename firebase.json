@@ -1,10 +1,26 @@
 {
-  "hosting": {
+  "hosting": [ {
+    
+    "site": "kalharaj",
     "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**"
-    ]
+      "**/node_modules/**"],
+      "rewrites": [{"source": "**", "destination": "/index.html"}]
+    
+  },
+  {
+    
+    "site": "kalharajayathissa",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"],
+      "rewrites": [{"source": "**", "destination": "/index.html"}]
+    
   }
+
+  ]
 }

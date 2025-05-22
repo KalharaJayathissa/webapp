@@ -17,3 +17,14 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KALHARAJ }}
           channelId: live
           projectId: kalharaj
+
+      - name: Deploy to Firebase Hosting 2
+        run: |
+          echo "Deploying to Firebase Hosting..."
+          firebase deploy --only hosting --project kalharaj
+        env:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KALHARAJAYATHISSA }}
+          channelId: live
+          projectId: kalharajayathissa
+          }
